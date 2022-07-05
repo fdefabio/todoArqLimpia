@@ -1,0 +1,19 @@
+paso 1.
+ plugins {
+    id("co.com.bancolombia.cleanArchitecture") version "2.4.3"
+}
+
+paso2.
+gradle ca --package=com.techandsolve --type=reactive --name=TodoList --coverage=jacoco --lombok=true
+
+crear modelo.
+gradle gm --name TodoList
+
+crear usecase.
+gradle guc --name CrearTodo
+
+generar drivenadapter.
+gradle gda --type jpa
+
+generar entrry point.
+gradle gep --type webflux
